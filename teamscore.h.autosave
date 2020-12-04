@@ -1,0 +1,24 @@
+#ifndef TEAMSCORE_H
+#define TEAMSCORE_H
+
+#include <QWidget>
+
+namespace Ui {
+class TeamScore;
+}
+
+class TeamScore : public QWidget
+{
+    Q_OBJECT
+
+public:
+    explicit TeamScore(QWidget *parent = nullptr);
+    ~TeamScore();
+
+private:
+    Ui::TeamScore *ui;
+    
+    
+};
+
+#endif // TEAMSCORE_H
