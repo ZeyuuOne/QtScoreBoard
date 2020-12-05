@@ -19,6 +19,7 @@ public:
     void revoke();
     QVector<int> getCurrentScore();
     QVector<QString> getTeamName();
+    int getIncrement();
 };
 
 #endif // SCORE_H

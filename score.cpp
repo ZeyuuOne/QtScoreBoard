@@ -1,4 +1,6 @@
 #include "score.h"
+#include "qfile.h"
+#include "qtextstream.h"
 
 Score::Score()
 {
@@ -7,6 +9,16 @@ Score::Score()
     val.resize(6);
     his.clear();
     his.push_back(val);
+    QFile in("D:/team.txt");
+    if (!in.open(QIODevice::ReadOnly | QIODevice::Text)){
+    };
+    teamName.resize(6);
+    QTextStream textStream(&in);
+    for (int i=0;i<6;i++){
+        QString teamNameStr = textStream.readLine();
+        teamName[i]=teamNameStr;
+    }
+    in.close();
 }
 
 void Score::setIncrement(int _increament){
@@ -20,7 +32,7 @@ void Score::increase(int index){
 }
 
 void Score::revoke(){
-    if (his.size()>0) his.pop();
+    if (his.size()>1) his.pop();
 }
 
 QVector<int> Score::getCurrentScore(){
@@ -29,4 +41,8 @@ QVector<int> Score::getCurrentScore(){
 
 QVector<QString> Score::getTeamName(){
     return teamName;
+}
+
+int Score::getIncrement(){
+    return increment;
 }

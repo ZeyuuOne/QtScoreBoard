@@ -11,11 +11,13 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
+    qclickwidget.cpp \
     score.cpp \
     timer.cpp
 
 HEADERS += \
     mainwindow.h \
+    qclickwidget.h \
     score.h \
     timer.h
 

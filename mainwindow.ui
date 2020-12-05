@@ -35,7 +35,7 @@
       <height>400</height>
      </rect>
     </property>
-    <widget class="QWidget" name="widgetTeamScore6" native="true">
+    <widget class="QClickWidget" name="widgetTeamScore6" native="true">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -163,7 +163,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="widgetTeamScore2" native="true">
+    <widget class="QClickWidget" name="widgetTeamScore2" native="true">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -291,7 +291,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="widgetTeamScore5" native="true">
+    <widget class="QClickWidget" name="widgetTeamScore5" native="true">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -419,7 +419,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="widgetTeamScore1" native="true">
+    <widget class="QClickWidget" name="widgetTeamScore1" native="true">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -549,7 +549,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="widgetTeamScore3" native="true">
+    <widget class="QClickWidget" name="widgetTeamScore3" native="true">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -677,7 +677,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="widgetTeamScore4" native="true">
+    <widget class="QClickWidget" name="widgetTeamScore4" native="true">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -950,6 +950,14 @@
    </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QClickWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">qclickwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

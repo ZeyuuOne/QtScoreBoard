@@ -27,11 +27,13 @@ private:
     QLabel* labelScore[6];
     QLabel* labelTeamName[6];
     QProgressBar* progressBarScore[6];
+    QClickWidget* widgetTeamScore[6];
     Score score;
     Timer timer;
 
 public slots:
     void refreshScoreView();
     void increase(int i);
+    void revoke();
 };
 #endif // MAINWINDOW_H
